@@ -1,0 +1,95 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color:#fff !important;
+}
+form h3{
+    margin-left: 200px;
+    color:#FF5161;
+}
+form{
+    display: flex;
+    flex-direction:column;
+}
+input{
+    width:500px;
+    height: 45px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: #E7E9F6;
+    
+}
+input::placeholder{
+    text-align: center;
+    color:gray;
+}
+ form label{
+    color: #8F8AA8;
+    font-size: 25px;
+    font-weight: 800;
+}
+#submit{
+    width:250px;
+    height: 45px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color:#FF5161;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: 3px 3px 5px #E7E9F6;
+}
+#sign{
+    display: inline-flex;
+    }
+#signin{
+  margin-left: 70px;
+  margin-top: 10px;
+  color: #FF5161;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+
+}
+#gear1,#gear2{
+animation: move 1s infinite;
+transform-box: fill-box;
+transform-origin:center;
+}
+@keyframes move {
+    10%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+        
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    }
+    @media screen and (max-width:600px){
+        input{
+            width:300px;
+            height: 35px;
+        }
+        form{
+            margin-left: 200px;
+        }
+       form h3{
+            margin-left:50px;
+        }
+      #sign #submit{
+            width:200px;
+            height: 35px;
+        }
+        #signin{
+            margin-left:35px;
+            margin-top: 10px;
+        }
+    }    
