@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+  background-image: url("assets/pexels-pixabay-531880.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#login{
+    width:350px;
+    height: 550px;
+    border: 5px solid rgb(46, 44, 44);
+    border-radius: 10px;
+   margin-top: 40px;
+    margin-left: 500px; 
+    box-shadow: 3px 3px 10px rgb(46, 44, 44); 
+    background-color: #fff;
+    
+    
+  }
+  #login:hover{
+   box-shadow: 3px 3px 10px rgb(46, 44, 44),
+   inset 4px 4px 10px #fff;  
+   transition: 0.5s; 
+  }
+  #login h3{
+    text-align: center;
+    color: #FF0526;
+
+  }
+  input{
+    width: 300px !important;
+    height: 35px !important;
+    border: 2px solid rgb(46, 44, 44) !important;
+    border-radius: 10px !important;
+    margin: 10px !important;
+    margin-left: 20px !important;
+  }
+  #bttn{
+   width: 300px;
+   height: 35px;
+   background-color: #FF0526;
+   color: #fff;
+   border-radius: 10px;
+   margin: 10px ;
+   border: none;
+   margin-left: 20px;
+  }
+  form label{
+   margin-left: 20px;
+   color:#FF0526 ;
+  }
+  #problem{
+   width: 300px !important;
+   height: 100px !important;
+   border: 2px solid rgb(46, 44, 44) !important;
+   border-radius: 30px !important;
+   margin: 10px !important;
+   margin-left: 20px !important;
+  }
+  @media screen and (max-width:600px){
+   
+    #login{
+      width:220px ;
+      height: 510px ;
+      margin-left: 10px; 
+    }
+    input{
+      width:170px !important;
+      height:30px !important;
+      border-radius: 10px;
+      margin: 10px;
+    }
+    #bttn{
+      width: 170px;
+      height: 30px;
+    }
+
+  }
