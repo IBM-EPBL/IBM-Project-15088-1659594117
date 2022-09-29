@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}" />
+</head>
+<body>
+    <div id="container-signup">
+        <h3 id="title">Update</h3>
+    <form  action=""method="POST" encType="multipart/form-data" >
+        <input type="text"  placeholder="Enter the name"value="{{update['USERNAME']}}" name="name" required />
+        <input type="email" placeholder="Enter the email"value="{{update['EMAIL']}}" name="email" required />
+        <input type="password" placeholder="Enter the password"value="{{update['PASSWORD']}}" name="pwd" required />
+        <input type="text" placeholder="Enter the rollnumber" value="{{update['ROLLNUMBER']}}" name="roll"required />
+        <button>update</button>
+    </form>
+      </div> 
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}" />
+</head>
+<body>
+    <div id="container-signup">
+        <h3 id="title">Signup</h3>
+    <form  action="/signup"method="POST"  >
+        <input type="text"  placeholder="Enter the name" name="name" required />
+        <input type="email" placeholder="Enter the email"  name="email" required />
+        <input type="password" placeholder="Enter the password"  name="pwd" required />
+        <input type="text" placeholder="Enter the rollnumber"   name="roll" required />
+        <button>signup</button>
+    </form>
+    <div id="detiles"><h5>have an account</h5><a  class="a"href="/login">Signin</a></div>  
+      
+      </div> 
+</body>
+</html>
