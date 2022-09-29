@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <div id="login">
+        <form action="/signin" method="post"  >
+            <h3>Signin</h3>
+                   <lable>Email</lable>
+                   <input type="email"  autocomplete="off" name="email" placeholder="Enter the email"  id="password"/>
+                   <lable>password</lable>
+                   <input type="password"  autocomplete="off" name="pwd" placeholder="Enter the password" id="password"/>
+                   <button id="bttn" name="btn">Signin</button>
+                   <div id="a"> <p>Don't have account</p>
+                    <a href="/"id="sig">Register</a></div>
+            </form>
+        </div>
+       
+</body>
+</html>

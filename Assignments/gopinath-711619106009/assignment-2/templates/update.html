@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <div id="signup">
+        <form action="" method="post"  >
+            <h3>Update</h3>
+                  <lable>Name</lable>
+                   <input type="text"  autocomplete="off" value="{{update['USERNAME']}}" name="name" placeholder="Enter the name"  id="name"/>
+                   <lable>Email</lable>
+                   <input type="email"  autocomplete="off"  value="{{update['EMAIL']}}"name="email" placeholder="Enter the email"  id="password"/>
+                   <lable>password</lable>
+                   <input type="text"  autocomplete="off" value="{{update['PASSWORD']}}" name="pwd" placeholder="Enter the password" id="password"/>
+                   <lable>rollnumber</lable>
+                   <input type="text"  autocomplete="off"  value="{{update['ROLLNUMBER']}}" name="roll" placeholder="Enter the rollnumber" id="password"/>
+                   <button id="bttn" name="btn">update</button>
+            </form>
+        </div>
+       
+</body>
+</html>
