@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: azure;
+}
+h1{
+    text-align: center;
+    color: blue;
+    margin: 20px;
+
+}
