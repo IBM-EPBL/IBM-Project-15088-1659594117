@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+     <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Hospital Bot</title>
+</head>
+<body>
+    <div class="container">
+         <!--navbar!-->
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Nav">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand">We.Care</a>
+        
+      </div>
+      <div class="collapse navbar-collapse" id="Nav">
+        <ul class="nav  navbar-nav navbar-right ">
+        
+          <li><a href="#">Find a doctor</a></li>
+          <li><a href="#">Find a hospital</a></li>
+          <li><a href="#">Find a A-Z</a></li>
+          <button id="signup" class="btn navbar-btn">Signup</button>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+        <div class="col-lg-6 col-md-6 col-sm-12"> 
+          <div id="text">
+            <h1>Feel better about</h1><br>
+            <h1>Finding healthcare</h1><br>
+            <p>You have any query about hospital</p><br>
+            <p>the chatbot sophia will support you</p><br>
+            <p>check into the right corner</p>
+          </div>
+          <button id="signup" class="btn navbar-btn">Start Now</button>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12"> 
+          <img alt="doctor" class="img img-responsive" src="assets/doctor.png"/>
+        </div>
+    </div>
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "7c8ef4b8-25d9-4cb0-9a92-597e9c5405bf", // The ID of this integration.
+        region: "au-syd", // The region your integration is hosted in.
+        serviceInstanceID: "7e892afd-52f8-46a5-a707-7ed97d8507e7", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+    </script>
+</body>
+</html>
