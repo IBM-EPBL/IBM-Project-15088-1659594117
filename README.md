@@ -55,8 +55,10 @@ Live now click start link
   
 ## Screenshots
 
-![App Screenshot](https://github.com/IBM-EPBL/IBM-Project-15088-1659594117/blob/master/screenshot/home.png)
 ![App Screenshot](https://github.com/IBM-EPBL/IBM-Project-15088-1659594117/blob/master/screenshot/signup.png)
+![App Screenshot](https://github.com/IBM-EPBL/IBM-Project-15088-1659594117/blob/master/screenshot/home.png)
+![App Screenshot](https://github.com/IBM-EPBL/IBM-Project-15088-1659594117/blob/master/screenshot/home2.png)
+
 
   
 ## Features
