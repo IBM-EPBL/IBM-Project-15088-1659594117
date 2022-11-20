@@ -1,0 +1,8 @@
+Flask
+ibm_db
+uuid
+flask_mail
+requests
+
+
+
