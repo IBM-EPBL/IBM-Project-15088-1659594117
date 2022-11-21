@@ -1,6 +1,6 @@
 import requests
 
-key="d5162e46c64f46de8dc4f4d5d54a03a8"
+key="api_key"
 
 def headlines():
        r="https://newsapi.org/v2/top-headlines?country=in&apiKey={}"

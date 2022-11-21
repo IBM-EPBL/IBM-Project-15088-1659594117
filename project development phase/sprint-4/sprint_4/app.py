@@ -16,7 +16,7 @@ mail = Mail(app)
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
 app.config['MAIL_USERNAME'] = 'karthicksarankalemuthu@gmail.com'
-app.config['MAIL_PASSWORD'] = 'dfcytsampdhdclxe'
+app.config['MAIL_PASSWORD'] = 'email_password'
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 mail = Mail(app) 
@@ -258,7 +258,7 @@ def send():
              ibm_db.execute(smt)
              res=ibm_db.fetch_assoc(smt)
              r="https://gnews.io/api/v4/top-headlines?token={0}&topic={1}&lang={2}&country=in&max=10"
-             key="9f69b1d56f54a24b8fd1e51b392048de"
+             key="api_key"
              s=r.format(key,res["CATEGORY"],res["LANGUAGE"])
              d=requests.get(s)
              data=d.json()
